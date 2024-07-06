@@ -17,6 +17,8 @@ class MediaThumbnailEntity extends Entity
 
     public ?int $height = null;
 
+    public ?string $path = null;
+
     public ?string $url = null;
 
     public ?MediaEntity $media = null;

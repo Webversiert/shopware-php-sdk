@@ -1,6 +1,7 @@
 <?php declare(strict_types=1);
 namespace Vin\ShopwareSdk\Data\Entity\Media;
 
+use Vin\ShopwareSdk\Data\Entity\EntityCollection;
 use Vin\ShopwareSdk\Data\Entity\MediaTranslation\MediaTranslationCollection;
 use Vin\ShopwareSdk\Data\Entity\Tag\TagCollection;
 use Vin\ShopwareSdk\Data\Entity\MediaThumbnail\MediaThumbnailCollection;
@@ -38,17 +39,23 @@ class MediaEntity extends Entity
 
     public ?string $mediaFolderId = null;
 
+    public ?array $config = null;
+
+    public ?string $path = null;
+
     public ?string $mimeType = null;
 
     public ?string $fileExtension = null;
 
-    public ?\DateTimeInterface$uploadedAt = null;
+    public ?\DateTimeInterface $uploadedAt = null;
 
     public ?string $fileName = null;
 
     public ?int $fileSize = null;
 
     public ?string $mediaTypeRaw = null;
+
+    public ?string $metaDataRaw = null;
 
     public ?array $metaData = null;
 
@@ -112,7 +119,5 @@ class MediaEntity extends Entity
 
     public ?AppPaymentMethodCollection $appPaymentMethods = null;
 
-    public ?ThemeCollection $themes = null;
-
-    public ?ThemeCollection $themeMedia = null;
+    public ?EntityCollection $appShippingMethods = null;
 }

@@ -1,13 +1,13 @@
 {
-    "name": "vin-sw/shopware-sdk",
+    "name": "webv/shopware-sdk",
     "description": "A PHP SDK for Shopware 6 Platform",
     "type": "library",
     "license": "MIT",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "authors": [
         {
-            "name": "vin",
-            "email": "levienthuong@gmail.com"
+            "name": "webv",
+            "email": "info@webversiert.de"
         }
     ],
     "minimum-stability": "stable",
